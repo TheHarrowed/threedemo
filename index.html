@@ -89,11 +89,10 @@
 				
 
 				var planetTexture = THREE.ImageUtils.loadTexture("textures/planet.png");
-				var planetTexture = THREE.ImageUtils.loadTexture("textures/cube/pisa/planet.png");
-				texture.wrapS = texture.wrapT = THREE.ClampToEdgeWrapping;
-				texture.repeat.set( 125, 125 );
-				texture.offset.set( 15, 15 );
-				texture.needsUpdate = true;
+				planetTexture.wrapS = planetTexture.wrapT = THREE.ClampToEdgeWrapping;
+				//planetTexture.repeat.set( 125, 125 );
+				//planetTexture.offset.set( 15, 15 );
+				planetTexture.needsUpdate = true;
 				var sphereMaterial = new THREE.MeshBasicMaterial( { map: planetTexture } );
 				// var sphere = new THREE.Mesh(new THREE.Sphere(radius, segments, rings),sphereMaterial);
 				
